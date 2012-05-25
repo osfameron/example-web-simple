@@ -1,0 +1,2 @@
+#!/bin/sh
+plackup -r lib/HelloWorld.pm

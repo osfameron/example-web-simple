@@ -1,0 +1,55 @@
+metacpan.org
+
+local::lib # installs modules to ~/perl5/
+sudo apt-get install liblocal-lib-perl
+
+cpan App::cpanminus # easier installation of modules
+
+cpanm Web::Simple # web "miniframework" using PSGI (cp WSGI)
+
+# example HelloWorld.pm app
+
+plackup -r HelloWorld.pm # to start it
+
+Template Toolkit  # http://www.tt2.org/
+cpanm Template
+
+Plack::Request
+
+Basics of variables...
+    my $scalar = "hello";
+    my @array  = (1,2,3);
+    my %hash   = (one => 1, two => 2);
+
+    # referencing
+    my $array_ref = \@array;
+    my $array_ref = [1,2,3];
+    my $hash_ref = \%hash;
+    my $hash_ref = {one => 1, two => 2 };
+
+    #dereferencing
+    my %hash = %$hash;
+    my @array = @$array;
+
+    # indexing
+    my $one = $array[0];
+    my $one = $hash{one};
+    my $one = $array_ref->[0];
+    my $one = $hash_ref ->{one};
+
+# SEE ALSO
+
+Dancer: more powerful web framework
+Catalyst: even more powerful
+
+DBIx::Class  DB ORM
+App::FatPacker  compile into single file
+Email::Sender 
+
+IRC:
+    irc.perl.org
+    #northwestengland.pm
+    #london.pm
+    #web-simple
+    #tt
+    #dbix-class

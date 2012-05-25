@@ -1,0 +1,10 @@
+[% IF posted  %]
+    Thanks for contacting us [% name %]
+[% ELSE %]
+    <h1> Contact form </h1>
+    <form method="post">
+        <input name="name">
+        <input type="submit">
+    </form>
+[% END %]
+
